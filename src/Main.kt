@@ -1,12 +1,7 @@
-import problems.YandexSampleContest_A
 import java.io.File
 
-val problem: Problem = YandexSampleContest_A()
-
 fun main() {
-    val data = read()
-    val result = problem.execute(data)
-    write(result)
+
 }
 
 ////////////////////////////////////////////////////////
@@ -44,8 +39,4 @@ fun write(data: Array<String>) {
         writer.newLine()
     }
     writer.close()
-}
-
-abstract class Problem {
-    abstract fun execute(data: ArrayList<String>): Array<String>
 }
