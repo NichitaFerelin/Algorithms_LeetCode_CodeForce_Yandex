@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * Design a parking system for a parking lot. The parking lot has three kinds of parking spaces:

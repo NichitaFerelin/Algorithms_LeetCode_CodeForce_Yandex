@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * You're given strings jewels representing the types of stones that are jewels, and stones

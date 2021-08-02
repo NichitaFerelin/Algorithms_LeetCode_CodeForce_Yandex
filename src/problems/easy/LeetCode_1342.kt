@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * Given an integer num, return the number of steps to reduce it to zero.

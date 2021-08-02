@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /*
 * You own a Goal Parser that can interpret a string command.

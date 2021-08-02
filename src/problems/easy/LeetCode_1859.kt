@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * A sentence is a list of words that are separated by a single space with no

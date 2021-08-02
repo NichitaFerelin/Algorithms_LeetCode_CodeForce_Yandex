@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * Given an array of integers nums. A pair (i,j) is called good if nums[i] == nums[j] and i < j.

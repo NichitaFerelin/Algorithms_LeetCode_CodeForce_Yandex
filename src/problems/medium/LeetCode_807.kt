@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 /**
  * There is a city composed of n x n blocks, where each block contains a single building shaped like a

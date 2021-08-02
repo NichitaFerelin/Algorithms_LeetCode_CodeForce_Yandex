@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * We are given a list nums of integers representing a list compressed with run-length encoding.

@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 /**
  * You have n boxes. You are given a binary string boxes of length n,

@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * You are given an array items, where each items[i] = [typei, colori, namei]

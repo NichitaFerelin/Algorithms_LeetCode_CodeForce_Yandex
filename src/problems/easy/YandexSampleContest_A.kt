@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 class YandexSampleContest_A {
 

@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * Given two arrays of integers nums and index. Your task is to create target array under the following rules:

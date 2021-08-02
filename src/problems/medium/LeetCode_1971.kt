@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 /**
  * There is an undirected star graph consisting of n nodes labeled from 1 to n.

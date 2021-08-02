@@ -1,4 +1,4 @@
-package problems
+package problems.easy
 
 /**
  * Balanced strings are those that have an equal quantity of 'L' and 'R' characters.

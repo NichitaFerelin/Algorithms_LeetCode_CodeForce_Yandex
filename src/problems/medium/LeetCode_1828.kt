@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 /**
  * You are given an array points where points[i] = [xi, yi] is the coordinates of the ith point on a 2D plane.

@@ -1,4 +1,4 @@
-package problems
+package problems.medium
 
 /**
  * Given the array queries of positive integers between 1 and m,
