@@ -1,20 +1,6 @@
-package problems.medium
+package algorithms
 
-class LeetCode_535 {
-
-    private var mLastBuiltRoot: Node? = null
-
-    // Encodes a URL to a shortened URL.
-    fun encode(longUrl: String): String {
-        val encodedPair = encrypt(longUrl)
-        mLastBuiltRoot = encodedPair.first
-        return encodedPair.second
-    }
-
-    // Decodes a shortened URL to its original URL.
-    fun decode(shortUrl: String): String {
-        return decrypt(mLastBuiltRoot!!, shortUrl)
-    }
+class Code_Huffman {
 
     class Node(val symbol: Char?, val left: Node? = null, val right: Node? = null)
 
