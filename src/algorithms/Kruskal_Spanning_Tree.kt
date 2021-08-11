@@ -2,6 +2,36 @@ package algorithms
 
 class Kruskal_Spanning_Tree {
 
+    /*val nodeA = Kruskal_Spanning_Tree.Node('A')
+    val nodeB = Kruskal_Spanning_Tree.Node('B')
+    val nodeC = Kruskal_Spanning_Tree.Node('C')
+    val nodeD = Kruskal_Spanning_Tree.Node('D')
+    val nodeE = Kruskal_Spanning_Tree.Node('E')
+    val nodeF = Kruskal_Spanning_Tree.Node('F')
+    val nodeG = Kruskal_Spanning_Tree.Node('G')
+    val nodeH = Kruskal_Spanning_Tree.Node('H')
+    val nodeI = Kruskal_Spanning_Tree.Node('I')
+    val nodeJ = Kruskal_Spanning_Tree.Node('J')
+
+    val ab = Kruskal_Spanning_Tree.Edge(5, nodeA, nodeB)
+    val ae = Kruskal_Spanning_Tree.Edge(1, nodeA, nodeE)
+    val ad = Kruskal_Spanning_Tree.Edge(4, nodeA, nodeD)
+    val bc = Kruskal_Spanning_Tree.Edge(4, nodeB, nodeC)
+    val bd = Kruskal_Spanning_Tree.Edge(2, nodeB, nodeD)
+    val cj = Kruskal_Spanning_Tree.Edge(2, nodeC, nodeJ)
+    val ci = Kruskal_Spanning_Tree.Edge(1, nodeC, nodeI)
+    val ch = Kruskal_Spanning_Tree.Edge(4, nodeC, nodeH)
+    val ji = Kruskal_Spanning_Tree.Edge(0, nodeJ, nodeI)
+    val ih = Kruskal_Spanning_Tree.Edge(6, nodeI, nodeH)
+    val ig = Kruskal_Spanning_Tree.Edge(4, nodeI, nodeG)
+    val hg = Kruskal_Spanning_Tree.Edge(1, nodeH, nodeG)
+    val hd = Kruskal_Spanning_Tree.Edge(2, nodeH, nodeD)
+    val de = Kruskal_Spanning_Tree.Edge(2, nodeD, nodeE)
+    val df = Kruskal_Spanning_Tree.Edge(5, nodeD, nodeF)
+    val dg = Kruskal_Spanning_Tree.Edge(11, nodeD, nodeG)
+    val gf = Kruskal_Spanning_Tree.Edge(7, nodeG, nodeF)
+    val fe = Kruskal_Spanning_Tree.Edge(1, nodeF, nodeE)*/
+
     class Node(val name: Char)
 
     class Edge(val cost: Int, val from: Node, val to: Node)
