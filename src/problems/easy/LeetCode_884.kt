@@ -3,25 +3,55 @@ package problems.easy
 class LeetCode_884 {
 
     fun uncommonFromSentences(s1: String, s2: String): Array<String> {
+        val firstStrWords = readWordsInMap(s1)
+        val secondStrWords = readWordsInMap(s2)
+
         val uncommonWords = mutableListOf<String>()
 
-        val s1Words = s1.split(" ")
-        val s2Words = s2.split(" ")
+        for (map in firstStrWords) {
+            val word = map.key
+            val counter = map.value
 
-        var s1Cursor = 0
-        var s2Cursor = 0
-        while (s1Cursor < s1Words.size && s2Cursor < s2Words.size) {
-            if (s1Words[s1Cursor] != s2Words[s2Cursor]) {
-                uncommonWords.add(s1Words[s1Cursor])
-                uncommonWords.add(s2Words[s2Cursor])
+            if (counter > 1) continue
+
+            val wordAtSecondContainer = secondStrWords[word]
+            if (wordAtSecondContainer == null) {
+                uncommonWords.add(word)
             }
-            s1Cursor++
-            s2Cursor++
         }
 
-        while (s1Cursor < s1Words.size) uncommonWords.add(s1Words[s1Cursor++])
-        while (s2Cursor < s2Words.size) uncommonWords.add(s2Words[s2Cursor++])
+        for (map in secondStrWords) {
+            val word = map.key
+            val counter = map.value
 
-        return Array(uncommonWords.size) { uncommonWords[it] }
+            if (counter > 1) continue
+
+            val wordAtFirstContainer = firstStrWords[word]
+            if (wordAtFirstContainer == null) {
+                uncommonWords.add(word)
+            }
+        }
+
+        return uncommonWords.toTypedArray()
+    }
+
+    private fun readWordsInMap(str: String): HashMap<String, Int> {
+        val wordsContainer = HashMap<String, Int>()
+
+        var cursor = 0
+        var wordStart = cursor
+
+        while (cursor < str.length) {
+            if (str[cursor] == ' ') {
+                val word = str.substring(wordStart, cursor)
+                wordsContainer[word] = wordsContainer.getOrDefault(word, 0) + 1
+                wordStart = ++cursor
+            } else cursor++
+        }
+
+        val word = str.substring(wordStart, cursor)
+        wordsContainer[word] = wordsContainer.getOrDefault(word, 0) + 1
+
+        return wordsContainer
     }
 }
