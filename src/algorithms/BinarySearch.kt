@@ -15,6 +15,6 @@ object BinarySearch {
             }
         }
 
-        return -1
+        return -leftBorder
     }
 }
