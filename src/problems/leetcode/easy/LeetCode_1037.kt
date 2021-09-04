@@ -1,0 +1,8 @@
+package problems.leetcode.easy
+
+class LeetCode_1037 {
+
+    fun isBoomerang(points: Array<IntArray>): Boolean {
+        return (points[0][0] - points[1][0]) * (points[0][1] - points[2][1]) != (points[0][0] - points[2][0]) * (points[0][1] - points[1][1])
+    }
+}
