@@ -8,22 +8,7 @@ fun main() {
 const val inputFileName = "input.txt"
 const val outputFileName = "output.txt"
 
-/**
- * @return data by lines.
- * For example:
- *  input.txt {
- *      1 2 3 4
- *      54
- *      text
- *  }
- *
- *  Read result = {
- *      { 1 2 3 4 },
- *      { 54 },
- *      { text }
- *   }
- * */
-fun read(): ArrayList<String> {
+fun readFromFile(): ArrayList<String> {
     val inputStream = File(inputFileName).inputStream()
     return ArrayList<String>().apply {
         inputStream.bufferedReader().forEachLine { add(it) }
@@ -31,7 +16,17 @@ fun read(): ArrayList<String> {
     }
 }
 
-fun write(data: Array<String>) {
+fun readFromConsole(): List<String> {
+    val result = mutableListOf<String>()
+    var line = readLine()
+    while (line != null) {
+        result.add(line)
+        line = readLine()
+    }
+    return result
+}
+
+fun writeToFile(data: Array<String>) {
     val file = File(outputFileName).apply { createNewFile() }
     val writer = file.bufferedWriter()
     data.forEach {
